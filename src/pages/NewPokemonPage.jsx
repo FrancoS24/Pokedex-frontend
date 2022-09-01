@@ -26,7 +26,8 @@ const NewPokemon = () => {
                 <div className=' ml-4 mt-8 mb-2 flex flex-row'>
                     <img
                         className='w-[30px] h-[30px] hover:animate-spin'
-                        src={Pokeball}  alt="" />
+                        src={Pokeball}  alt="" 
+                        onClick={() => navigate('/home')}/>
 
                     <h1
                         className='font-[1000] text-[#212121] text-2xl ml-6'
@@ -35,12 +36,7 @@ const NewPokemon = () => {
 
 
             </div>
-                <FormNewPokemon 
-                    pokemon={pokemon}
-                    setPokemon={setPokemon}
-                    pokemons={pokemons}
-                    setPokemons={setPokemons}
-                />
+                <FormNewPokemon />
 
             </div>
         </div>
