@@ -53,7 +53,7 @@ const Start = () => {
 
      
       </div>
-      <div className='flex flex-col items-center mt-24'>
+      <div className='flex flex-col items-center mt-40'>
       <Link to='/login'>
         <input 
           type="button" 
@@ -72,14 +72,14 @@ const Start = () => {
         />
         </Link>
         
-        <div className='flex flex-row justify-between items-center'>
+        {/* <div className='flex flex-row justify-between items-center'>
           <hr className='w-[120px] h-[1px] bg-[#212121] my-10' />
-        </div>
+        </div> */}
 
         <Link to='/home'>
         <input 
           type="button" 
-          className="text-[#212121] w-[320px] hover:text-[#E0E0E0] font-[1000] h-8 w-full hover:bg-[#212121] bg-[#E0E0E0] cursor-pointer rounded-lg transition ease-in-out delay-100  hover:-translate-x-y-1 hover:scale-110   duration-100"
+          className="text-[#212121] mt-10 w-[320px] hover:text-[#E0E0E0] font-[1000] h-8 w-full hover:bg-[#212121] bg-[#E0E0E0] cursor-pointer rounded-lg transition ease-in-out delay-100  hover:-translate-x-y-1 hover:scale-110   duration-100"
           value="Login as a guest"
           onClick={() => {loginAsGuest()}}
           
